@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Anisotropic Labs</title>
+    <meta name="description" content="Research journal from Anisotropic Labs: CFD notes, logs, and AR simulation insights." />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="nav-grid">
+        <a class="logo-wrap" href="index.html">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Anisotropic Labs</span>
+        </a>
+        <nav class="nav-links" aria-label="Main">
+          <a data-nav href="index.html">Platform</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="app.html">App</a>
+          <a data-nav href="developers.html">Developers</a>
+          <a data-nav href="blog.html">Blog</a>
+          <a data-nav href="company.html">Company</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="index.html#work-with-us">Work With Us</a>
+          <a class="btn btn-secondary" href="mailto:contact@anisotropiclabs.com">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container reveal">
+          <span class="eyebrow">Research Journal</span>
+          <h1 class="headline-xl">Notes from simulation development and spatial experiments.</h1>
+          <p class="lead">
+            We publish ongoing technical writing that documents methods, failures, insights, and design decisions.
+          </p>
+          <div class="chip-row">
+            <span class="chip">CFD Notes</span>
+            <span class="chip">Research Logs</span>
+            <span class="chip">Simulation Insights</span>
+            <span class="chip">AR Experiments</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="blog-grid">
+            <div>
+              <article class="post-card">
+                <div class="post-meta">
+                  <span>CFD Notes</span>
+                  <span>Jan 2026</span>
+                </div>
+                <h2 class="headline-md">Directional turbulence around furniture-scale obstacles</h2>
+                <p>
+                  A short log on where anisotropic assumptions hold, where they degrade, and how we interpret the
+                  transition boundaries in room-scale setups.
+                </p>
+                <a class="btn btn-secondary" href="#">Read entry</a>
+              </article>
+              <article class="post-card" style="margin-top: 1rem;">
+                <div class="post-meta">
+                  <span>AR Experiments</span>
+                  <span>Dec 2025</span>
+                </div>
+                <h2 class="headline-md">Designing overlays that explain instead of decorate</h2>
+                <p>
+                  We tested multiple visualization grammars for velocity and concentration layers and measured which
+                  ones improved explanation quality in demos.
+                </p>
+                <a class="btn btn-secondary" href="#">Read entry</a>
+              </article>
+              <article class="post-card" style="margin-top: 1rem;">
+                <div class="post-meta">
+                  <span>Research Logs</span>
+                  <span>Nov 2025</span>
+                </div>
+                <h2 class="headline-md">Calibrating room models with measured ventilation profiles</h2>
+                <p>
+                  Process notes on matching simulated behavior with sensor-driven traces in a controlled indoor test
+                  environment.
+                </p>
+                <a class="btn btn-secondary" href="#">Read entry</a>
+              </article>
+            </div>
+            <aside class="glass-panel" style="padding: 1.3rem;">
+              <span class="eyebrow">Archive</span>
+              <h3 class="headline-md">Recent categories</h3>
+              <ul class="list-clean" style="margin-top: 0.6rem;">
+                <li>CFD Notes: solver behavior, constraints, edge cases</li>
+                <li>Research Logs: experiments, datasets, validation</li>
+                <li>Simulation Insights: interpretation methods</li>
+                <li>AR Experiments: interface and learning outcomes</li>
+              </ul>
+              <div class="story-section" style="margin-top: 1.2rem;">
+                <h4 class="headline-md">Submit a collaboration note</h4>
+                <p class="small">Interested in co-authoring a technical post with our team?</p>
+                <a class="btn btn-primary" href="mailto:research@anisotropiclabs.com?subject=Blog%20Collaboration">Contact Research Team</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <a class="logo-wrap" href="index.html">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Anisotropic Labs</span>
+        </a>
+        <div class="footer-links">
+          <a href="mailto:contact@anisotropiclabs.com">Contact</a>
+          <a href="#">GitHub</a>
+          <a href="blog.html">Research updates</a>
+        </div>
+        <form class="signup">
+          <input type="email" placeholder="Email for journal updates" aria-label="Email for journal updates" />
+          <button class="btn btn-secondary" type="button">Subscribe</button>
+        </form>
+      </div>
+      <div class="container small muted" style="margin-top: 1.2rem;">&copy; <span data-year></span> Anisotropic Labs</div>
+    </footer>
+  </body>
+</html>
