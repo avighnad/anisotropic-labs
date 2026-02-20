@@ -12,54 +12,48 @@ export default async function BlogPage() {
 
   return (
     <>
-      <section className="hero section">
+      <section className="band light-band hero-band">
         <div className="container" data-reveal>
           <span className="eyebrow">Research Journal</span>
-          <h1 className="headline-xl">Notes from simulation development and spatial experiments.</h1>
+          <h1 className="headline-xl">Technical notes from computational experiments and AR simulation design.</h1>
           <p className="lead">
-            We publish ongoing technical writing that documents methods, failures, insights, and design decisions.
+            A running journal of methods, model constraints, and interface decisions from our research practice.
           </p>
-          <div className="chip-row">
-            <span className="chip">CFD Notes</span>
-            <span className="chip">Research Logs</span>
-            <span className="chip">Simulation Insights</span>
-            <span className="chip">AR Experiments</span>
-          </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container" data-reveal>
-          <div className="blog-grid">
+      <section className="band dark-band">
+        <div className="container band-inner on-dark" data-reveal>
+          <div className="journal-grid">
             <div>
               {posts.map((post) => (
-                <article className="post-card" key={post.slug} style={{ marginBottom: "1rem" }}>
+                <article className="post-card" key={post.slug}>
                   <div className="post-meta">
                     <span>{post.category}</span>
                     <span>{formatDate(post.publishedAt)}</span>
                   </div>
                   <h2 className="headline-md">{post.title}</h2>
                   <p>{post.excerpt}</p>
-                  <Link className="btn btn-secondary" href={`/blog/${post.slug}`}>
+                  <Link className="btn btn-dark" href={`/blog/${post.slug}`}>
                     Read entry
                   </Link>
                 </article>
               ))}
             </div>
 
-            <aside className="glass-panel" style={{ padding: "1.3rem" }}>
-              <span className="eyebrow">Archive</span>
-              <h3 className="headline-md">Recent categories</h3>
-              <ul className="list-clean" style={{ marginTop: "0.6rem" }}>
-                <li>CFD Notes: solver behavior, constraints, edge cases</li>
-                <li>Research Logs: experiments, datasets, validation</li>
-                <li>Simulation Insights: interpretation methods</li>
-                <li>AR Experiments: interface and learning outcomes</li>
+            <aside className="journal-aside">
+              <span className="eyebrow">Categories</span>
+              <h3 className="headline-md">Journal domains</h3>
+              <ul className="list-clean" style={{ marginTop: "0.7rem" }}>
+                <li>CFD Notes</li>
+                <li>Research Logs</li>
+                <li>Simulation Insights</li>
+                <li>AR Experiments</li>
               </ul>
-              <div className="story-section" style={{ marginTop: "1.2rem" }}>
-                <h4 className="headline-md">Submit a collaboration note</h4>
-                <p className="small">Interested in co-authoring a technical post with our team?</p>
-                <a className="btn btn-primary" href="mailto:research@anisotropiclabs.com?subject=Blog%20Collaboration">
+              <div className="light-card" style={{ marginTop: "1rem" }}>
+                <h4 className="headline-md">Contribute a note</h4>
+                <p>Interested in co-authoring a technical research log with us?</p>
+                <a className="btn btn-secondary" href="mailto:research@anisotropiclabs.com?subject=Blog%20Collaboration">
                   Contact Research Team
                 </a>
               </div>

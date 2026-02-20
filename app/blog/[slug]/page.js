@@ -29,22 +29,24 @@ export default async function BlogPostPage({ params }) {
   const post = await getPostBySlug(params.slug);
 
   return (
-    <section className="section">
+    <section className="band light-band hero-band">
       <div className="container post-content" data-reveal>
-        <Link className="chip" href="/blog">
+        <Link className="btn btn-secondary" href="/blog">
           Back to Blog
         </Link>
-        <div className="post-meta" style={{ marginTop: "1.2rem" }}>
-          <span>{post.category}</span>
-          <span>
-            {formatDate(post.publishedAt)} {post.readingTime ? `- ${post.readingTime} min read` : ""}
-          </span>
-        </div>
-        <h1 className="headline-xl" style={{ marginTop: "0.6rem" }}>
-          {post.title}
-        </h1>
-        <p className="lead">{post.excerpt}</p>
-        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <article className="article-shell" style={{ marginTop: "1rem" }}>
+          <div className="post-meta" style={{ marginBottom: "0.8rem" }}>
+            <span>{post.category}</span>
+            <span>
+              {formatDate(post.publishedAt)} {post.readingTime ? `- ${post.readingTime} min read` : ""}
+            </span>
+          </div>
+
+          <h1 className="headline-xl">{post.title}</h1>
+          <p className="lead">{post.excerpt}</p>
+          <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
       </div>
     </section>
   );

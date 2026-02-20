@@ -1,11 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function SiteFooter() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <Link className="logo-wrap" href="/">
-          <span className="logo-mark">A</span>
+          <span className="logo-mark" aria-hidden="true">
+            <Image src="/icon.png" alt="" fill sizes="34px" className="logo-mark-image" />
+          </span>
           <span className="logo-text">Anisotropic Labs</span>
         </Link>
 
@@ -17,7 +20,7 @@ export function SiteFooter() {
 
         <form className="signup">
           <input type="email" placeholder="Email for updates" aria-label="Email for updates" />
-          <button className="btn btn-secondary" type="submit">
+          <button className="btn btn-quiet" type="submit">
             Subscribe
           </button>
         </form>
