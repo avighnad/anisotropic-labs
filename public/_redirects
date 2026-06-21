@@ -1,0 +1,10 @@
+/app /projects 301
+/app/* /projects/:splat 301
+/developers /code 301
+/developers/* /code/:splat 301
+/blog /research 301
+/blog/* /research 301
+/resources /research 301
+/resources/* /research 301
+/company /contact 301
+/company/* /contact/:splat 301
