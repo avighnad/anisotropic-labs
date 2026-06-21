@@ -1,29 +1,28 @@
 import Link from "next/link";
-import Image from "next/image";
+import { EmailLink } from "@/components/EmailLink";
+import { SOCIAL } from "@/data/social";
+import { GitHubIcon, LinkedInIcon } from "@/components/SocialIcons";
 
 export function SiteFooter() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <Link className="logo-wrap" href="/">
-          <span className="logo-mark" aria-hidden="true">
-            <Image src="/icon.png" alt="" fill sizes="34px" className="logo-mark-image" />
-          </span>
           <span className="logo-text">Anisotropic Labs</span>
         </Link>
 
         <div className="footer-links">
-          <a href="mailto:contact@anisotropiclabs.com">Contact</a>
-          <a href="#">GitHub</a>
-          <Link href="/blog">Research updates</Link>
+          <EmailLink>{SOCIAL.email}</EmailLink>
+          <a href={SOCIAL.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <GitHubIcon className="footer-social-icon" />
+          </a>
+          <a href={SOCIAL.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <LinkedInIcon className="footer-social-icon" />
+          </a>
+          <Link href="/research">Research</Link>
         </div>
 
-        <form className="signup">
-          <input type="email" placeholder="Email for updates" aria-label="Email for updates" />
-          <button className="btn btn-quiet" type="submit">
-            Subscribe
-          </button>
-        </form>
+        <div className="footer-location muted">Oslo, Norway</div>
       </div>
       <div className="container small muted" style={{ marginTop: "1.2rem" }}>
         &copy; {new Date().getFullYear()} Anisotropic Labs

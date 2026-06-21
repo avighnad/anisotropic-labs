@@ -1,16 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/", label: "Platform" },
+  { href: "/", label: "Home" },
   { href: "/research", label: "Research" },
-  { href: "/app", label: "App" },
-  { href: "/developers", label: "Developers" },
-  { href: "/blog", label: "Blog" },
-  { href: "/company", label: "Company" }
+  { href: "/projects", label: "Projects" },
+  { href: "/code", label: "Code" },
+  { href: "/contact", label: "Contact" }
 ];
 
 function isActivePath(pathname, href) {
@@ -27,9 +25,6 @@ export function SiteHeader() {
     <header className="site-nav">
       <div className="nav-grid">
         <Link className="logo-wrap" href="/">
-          <span className="logo-mark" aria-hidden="true">
-            <Image src="/icon.png" alt="" fill sizes="34px" className="logo-mark-image" priority />
-          </span>
           <span className="logo-text">Anisotropic Labs</span>
         </Link>
 
@@ -45,12 +40,12 @@ export function SiteHeader() {
         </nav>
 
         <div className="nav-actions">
-          <Link className="btn btn-primary" href="/#work-with-us">
-            Work With Us
+          <Link className="btn btn-primary" href="/research">
+            View Research
           </Link>
-          <a className="btn btn-secondary" href="mailto:contact@anisotropiclabs.com">
+          <Link className="btn btn-secondary" href="/contact">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </header>

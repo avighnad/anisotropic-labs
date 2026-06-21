@@ -1,9 +1,9 @@
-import { getAllPosts } from "@/lib/cms";
+import { getAllResearchSlugs } from "@/data/research";
 import { SITE } from "@/lib/constants";
 
 export default async function sitemap() {
-  const posts = await getAllPosts();
-  const staticRoutes = ["", "/research", "/app", "/developers", "/blog", "/company"];
+  const researchSlugs = getAllResearchSlugs();
+  const staticRoutes = ["", "/research", "/projects", "/code", "/contact"];
 
   const staticEntries = staticRoutes.map((route) => ({
     url: `${SITE.url}${route}`,
@@ -12,12 +12,12 @@ export default async function sitemap() {
     lastModified: new Date()
   }));
 
-  const postEntries = posts.map((post) => ({
-    url: `${SITE.url}/blog/${post.slug}`,
+  const researchEntries = researchSlugs.map((slug) => ({
+    url: `${SITE.url}/research/${slug}`,
     changeFrequency: "monthly",
     priority: 0.64,
-    lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date()
+    lastModified: new Date()
   }));
 
-  return [...staticEntries, ...postEntries];
+  return [...staticEntries, ...researchEntries];
 }
