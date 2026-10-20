@@ -62,9 +62,7 @@ export default function ResearchPage() {
                 <h3 className="headline-md">{item.title}</h3>
                 <p className="card-affiliation">{item.affiliation}</p>
                 {item.award && (
-                  <p style={{ fontSize: "0.78rem", color: "rgba(137, 225, 255, 0.85)", marginBottom: "0.5rem" }}>
-                    {item.award}
-                  </p>
+                  <p className="card-award">{item.award}</p>
                 )}
                 <p>{item.abstract}</p>
                 <div className="card-footer">

@@ -3,10 +3,12 @@ import { FluidCanvas } from "@/components/FluidCanvas";
 import { NewsTicker } from "@/components/NewsTicker";
 import { EmailLink } from "@/components/EmailLink";
 import { focusAreas } from "@/data/projects";
+import { IntroOverlay } from "@/components/intro/IntroOverlay";
 
 export default function HomePage() {
   return (
     <>
+      <IntroOverlay />
       <section className="band light-band hero-band">
         <div className="container hero-layout">
           <div data-reveal>

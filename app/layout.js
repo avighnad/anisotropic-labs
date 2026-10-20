@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { RevealObserver } from "@/components/RevealObserver";
 import { SITE } from "@/lib/constants";
+import { INTRO_BOOT_SCRIPT } from "@/components/intro/introSession";
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
@@ -43,7 +44,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: INTRO_BOOT_SCRIPT }} />
+      </head>
       <body>
         <RevealObserver />
         <SiteHeader />

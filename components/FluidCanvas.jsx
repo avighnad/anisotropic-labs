@@ -22,16 +22,16 @@ export function FluidCanvas({ className = "", tone = "dark" }) {
 
     const palette = darkMode
       ? {
-          stream: "rgba(103, 214, 255, 0.34)",
-          particle: "103, 214, 255",
-          fade: "rgba(8, 11, 16, 0.14)",
-          vector: "rgba(120, 170, 255, 0.28)"
+          stream: "rgba(157, 181, 122, 0.16)",
+          particle: "216, 212, 180",
+          fade: "rgba(16, 17, 18, 0.16)",
+          vector: "rgba(121, 129, 134, 0.32)"
         }
       : {
-          stream: "rgba(56, 137, 168, 0.22)",
-          particle: "47, 143, 174",
-          fade: "rgba(247, 252, 255, 0.35)",
-          vector: "rgba(82, 144, 188, 0.2)"
+          stream: "rgba(69, 70, 63, 0.22)",
+          particle: "90, 88, 72",
+          fade: "rgba(216, 212, 180, 0.3)",
+          vector: "rgba(121, 129, 134, 0.24)"
         };
 
     const resize = () => {

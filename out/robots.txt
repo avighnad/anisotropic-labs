@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://anisotropiclabs.com/sitemap.xml
+Sitemap: https://anisotropic.live/sitemap.xml
