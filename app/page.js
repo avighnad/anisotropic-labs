@@ -14,12 +14,12 @@ export default function HomePage() {
           <div data-reveal>
             <span className="eyebrow">Computational Research Laboratory</span>
             <h1 className="headline-xl">
-              Modeling the directionality of physical phenomena — from combustion stratification to atmospheric exhaust
+              Modelling the directionality of physical phenomena, from combustion stratification to atmospheric exhaust
               dynamics.
             </h1>
             <p className="lead">
               Anisotropic Labs works at the intersection of computational fluid dynamics, hydrogen combustion, and
-              aerospace engineering — from annular combustor stratification to near-field exhaust thermodynamics and
+              aerospace engineering, from annular combustor stratification to near field exhaust thermodynamics and
               nonlinear dynamical systems.
             </p>
             <div className="action-row">
@@ -40,7 +40,7 @@ export default function HomePage() {
           <div data-reveal>
             <div className="sim-viewport">
               <FluidCanvas className="fluid-canvas" tone="dark" />
-              <div className="sim-readout">Simulation viewport — combustor mesh — stratification field</div>
+              <div className="sim-readout">Simulation viewport / combustor mesh / stratification field</div>
             </div>
           </div>
         </div>
@@ -72,12 +72,12 @@ export default function HomePage() {
           <div>
             <span className="eyebrow">Research Philosophy</span>
             <p className="editorial-quote">
-              Anisotropic properties — directionally dependent physical behaviour — govern the problems worth solving.
+              Anisotropic properties, directionally dependent physical behaviour, govern the problems worth solving.
             </p>
           </div>
           <div>
             <p>
-              The lab treats simulation as a scientific instrument: explicit assumptions, reproducible methods, and
+              The lab treats simulation as a scientific instrument, with explicit assumptions, reproducible methods, and
               models framed as measurable questions rather than decorative visualisation.
             </p>
           </div>

@@ -19,7 +19,7 @@ export default function ResearchPage() {
           </h1>
           <p className="lead">
             Research at Anisotropic Labs is organised around physically grounded questions in CFD, combustion, and
-            aerospace engineering — tested through simulation, validated against experiment, and communicated with
+            aerospace engineering, tested through simulation, validated against experiment, and communicated with
             methodological transparency.
           </p>
         </div>

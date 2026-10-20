@@ -2,7 +2,7 @@ export const labTickerItems = [
   {
     label: "CFD",
     title: "Computational fluid dynamics & flow stratification",
-    detail: "Hydrogen combustion, exhaust thermodynamics, and multi-jet mixing analysis."
+    detail: "Hydrogen combustion, exhaust thermodynamics, and multijet mixing analysis."
   },
   {
     label: "Methods",
@@ -10,8 +10,8 @@ export const labTickerItems = [
     detail: "Simulation paired with experimental validation and reproducible workflows."
   },
   {
-    label: "Multi-physics",
-    title: "Rigid-body dynamics & aerodynamic coupling",
+    label: "Multiphysics",
+    title: "Rigid body dynamics & aerodynamic coupling",
     detail: "Nonlinear systems from pendulum mechanics to aerospace configurations."
   },
   {

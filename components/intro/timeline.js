@@ -20,7 +20,7 @@ const model = buildAircraft();
 const flow = buildStreamlines();
 
 export const BOOT_LOG = [
-  { id: "init", at: 60, label: "flight model / 001", value: "init", state: "initializing" },
+  { id: "init", at: 60, label: "flight model / 001", value: "init", state: "initialising" },
   {
     id: "geometry",
     at: 420,

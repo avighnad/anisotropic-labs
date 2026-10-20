@@ -381,10 +381,10 @@ export function createIntroScene({
     ctx.textBaseline = "middle";
     ctx.textAlign = "left";
     ctx.fillStyle = rgba(MUTED, 1);
-    ctx.fillText("SECTION A-A", px + 10, py + 14);
+    ctx.fillText("SECTION A/A", px + 10, py + 14);
     ctx.textAlign = "right";
     ctx.fillText("Cp", px + pw - 10, py + 14);
-    ctx.fillText("-1", x0 - 6, mapY(-1));
+    ctx.fillText("\u22121", x0 - 6, mapY(-1));
     ctx.fillText("0", x0 - 6, mapY(0));
     ctx.fillText("x/c", x1, y1 + 11);
 

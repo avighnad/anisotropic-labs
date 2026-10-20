@@ -29,7 +29,7 @@ export const metadata = {
     description: SITE.description,
     url: SITE.url,
     siteName: SITE.name,
-    locale: "en_US",
+    locale: "en_GB",
     type: "website"
   },
   twitter: {
@@ -44,7 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-GB" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: INTRO_BOOT_SCRIPT }} />
       </head>

@@ -88,7 +88,7 @@ export function IntroOverlay() {
         <div className="intro-head">
           <span className="intro-brand">Anisotropic Labs</span>
           <span className="intro-title">
-            Aerodynamic model <span className="intro-sep">/</span> <span ref={stateRef}>initializing</span>
+            Aerodynamic model <span className="intro-sep">/</span> <span ref={stateRef}>initialising</span>
           </span>
         </div>
 

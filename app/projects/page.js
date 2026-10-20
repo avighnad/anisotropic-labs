@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 export const metadata = {
   title: "Projects",
   description:
-    "Research and engineering projects at Anisotropic Labs — LiDAR AR fluid simulation, Hamara Prayas healthcare platform, and CFD post-processing tooling."
+    "Research and engineering projects at Anisotropic Labs, including LiDAR AR fluid simulation, the Hamara Prayas healthcare platform, and CFD post processing tooling."
 };
 
 export default function ProjectsPage() {
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
             <div data-reveal>
               <div className="sim-viewport">
                 <FluidCanvas className="fluid-canvas" tone="dark" />
-                <div className="sim-readout">AR preview domain — LiDAR mesh — flow overlay</div>
+                <div className="sim-readout">AR preview domain / LiDAR mesh / flow overlay</div>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
           <div className="container band-inner on-dark" data-reveal>
             <div className="band-head">
               <span className="eyebrow">Intended Use Case</span>
-              <h2 className="headline-lg">Education and intuition-building for fluid behaviour.</h2>
+              <h2 className="headline-lg">Education and intuition building for fluid behaviour.</h2>
               <p className="lead">{featured.useCase}</p>
             </div>
           </div>

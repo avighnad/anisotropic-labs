@@ -2,7 +2,7 @@ import { LAB_REPO } from "@/data/social";
 
 export const metadata = {
   title: "Code",
-  description: "Open-source code and simulation frameworks from Anisotropic Labs on GitHub."
+  description: "Open source code and simulation frameworks from Anisotropic Labs on GitHub."
 };
 
 export default function CodePage() {
@@ -12,8 +12,8 @@ export default function CodePage() {
         <span className="eyebrow">Code</span>
         <h1 className="headline-xl">Open computational research on GitHub.</h1>
         <p className="lead">
-          Anisotropic Labs develops simulation frameworks and numerical methods for modeling complex physical systems —
-          with emphasis on fluid dynamics, rigid-body dynamics, and multi-physics interactions. All code lives in a
+          Anisotropic Labs develops simulation frameworks and numerical methods for modelling complex physical systems,
+          with emphasis on fluid dynamics, rigid body dynamics, and multiphysics interactions. All code lives in a
           single repository structured for clarity, reproducibility, and extension.
         </p>
         <div className="action-row" style={{ marginTop: "1.6rem" }}>
